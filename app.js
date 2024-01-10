@@ -91,7 +91,7 @@ function isPangram(string) {
   let newString = string.replace(/[^a-zA-Z]/g, "");
   console.log(newString);
 
-  let charSet = new Set(newString);
+  let charSet = new Set(newString.toLowerCase());
   return charSet.size === 26;
 }
 
